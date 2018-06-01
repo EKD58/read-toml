@@ -1,0 +1,125 @@
+################################################################################
+## Comment
+################################################################################
+[section]
+key = "value section"	# comment
+
+[section.subSection]
+key = "value sub section"
+
+[a.b.c.d]
+
+[section.inline]
+name = { first = "Taro", last = "Yamada" }
+point = { x = 100, y = 200 }
+
+[string.normal]
+sampleA = "This is sample string \"Hello wolrd.\" "
+
+[string.multiline]
+sampleB = "Abc\nDef"
+sampleC = """Ghi\nJkl"""
+sampleD = """
+Mno
+Pqr"""
+
+[string.multiline.escape]
+sampleE = """
+string 1 \
+  string 2 \
+    string 3"""
+
+sampleF = """\
+       string 4 \
+       string 5 \
+       string 6 \
+       """
+
+[string.literal]
+sampleG = 'C:\Program Files\hogehoge\'
+sampleH = '<\i\c*\s*>'
+
+[integer]
+sample1 = +88
+sample2 = 38
+sample3 = 0
+sample4 = -24
+
+[integer.underscores]
+sample1 = 2_000
+sample2 = 4_321_987
+sample3 = 1_2_3_4_5
+
+
+[float.fractional]
+#sample1 = +2.0 # Exception
+sample2 = 3.14159
+sample3 = -0.009
+
+[float.exponent]
+#sample1 = 5e+33 # Exception
+#sample2 = 1e6 # Exception
+#sample3 = -2E-2 # Exception
+
+[float.both]
+sample = 6.626e-48
+
+[float.underscores]
+sample1 = 8_776_543.234_888_777_666
+#sample2 = 1e1_000 # Exception
+
+
+[boolean]
+True = true
+False = false
+
+
+[datetime]
+sample1 = 2018-05-31T10:48:11Z
+sample2 = 2018-05-31T12:48:11-05:00
+sample3 = 2018-05-31T12:48:11.987654-05:00
+
+
+[array]
+sample1 = [ 300, 200, 100 ]
+sample2 = [ "red", "blue", "green" ]
+sample3 = [ [ 10, 20 ], [30, 40, 50] ]
+sample4 = [ [ 111, 222 ], ["aa", "bbb", "cccc"] ]
+sample5 = [
+  1, 2, 3
+]
+sample6 = [
+  1,
+  2,
+]
+
+
+[[sectionArray]]
+paramA = "stringstring"
+paramB = 987654321
+
+[[sectionArray]]
+
+[[sectionArray]]
+paramA = "stringstringstring"
+paramB = 123456789
+paramC = "hogehoge"
+
+[[sectinArray2]]
+  name = "Taro"
+
+  [sectinArray2.subA]
+    message = "hello"
+    description = "foobar"
+
+  [[sectinArray2.subB]]
+    name = "Jiro"
+
+  [[sectinArray2.subB]]
+    name = "Saburo"
+
+[[sectinArray2]]
+  name = "Shiro"
+
+  [[sectinArray2.subB]]
+name = "Goro"
